@@ -996,12 +996,25 @@ footer
     max-height: 86px
     min-height: 86px
     padding-top: 10px
-
+.display7__slider-media
+  display: none 
 @media screen and ( max-width: 767px )
   .right a 
     margin-left: 0
   .display3__description
     text-align: center  
+  .display7__slider
+    display: none
+  .display7__slider-media
+    display: block
+    img 
+      width: 150px
+  img.slick-slide 
+    width: 150px
+  .slick-prev,.slick-next
+    display: none  
+  .slick-arrow
+    display: none         
 @media screen and ( max-width: 575px )
   .form__headline
     text-align: center
@@ -1104,4 +1117,7 @@ footer
     line-height: 45px
     font-size: 14px  
   .display10
-    height: 615px  
+    height: 615px 
+  .display4__mobile, .display10__mobile
+    margin-right: 0
+    margin-left: 0  

@@ -1423,12 +1423,34 @@ footer h2 {
   }
 }
 
+.display7__slider-media {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .right a {
     margin-left: 0;
   }
   .display3__description {
     text-align: center;
+  }
+  .display7__slider {
+    display: none;
+  }
+  .display7__slider-media {
+    display: block;
+  }
+  .display7__slider-media img {
+    width: 150px;
+  }
+  img.slick-slide {
+    width: 150px;
+  }
+  .slick-prev, .slick-next {
+    display: none;
+  }
+  .slick-arrow {
+    display: none;
   }
 }
 
@@ -1580,6 +1602,10 @@ footer h2 {
   }
   .display10 {
     height: 615px;
+  }
+  .display4__mobile, .display10__mobile {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

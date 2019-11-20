@@ -82,5 +82,9 @@ $(function () {
       }
     });
   });
-  
+  $('.display7__slider-media').slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 2
+  });
 });
