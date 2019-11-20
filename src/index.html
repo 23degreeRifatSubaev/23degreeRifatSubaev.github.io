@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang='ru'>
+  <head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>3D modeling website</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+  <link rel='stylesheet' href='sass/style.css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  </head>
+  <body>
+    <main id="main"  >
+      <div class="container">
+        <div class="row">
+          <div class="header col-12">
+            <img class="header__logo col-1" src="img/logo.png" alt="Логотип">
+            <span class="header__logo_text col-2">Degree</span>
+            <div class="col-lg-1 col-md-1 offset-lg-6 offset-md-5 offset-sm-4 header__phone">
+              <img class="header__phone_img" src="img/phone.png" alt="Телефон">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 header__phone_number">
+              Есть вопросы? Звоните! <br>  
+              <span>8 /800/ 259 09 36</span>
+            </div>
+            <div class="menu-link">
+              <span></span>
+              <span></span>
+              <span></span>
+              <p>меню</p>
+            </div>
+            <menu>
+              <a class="close-btn" href="#close">&times;</a>
+              <ul>
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#services">Наши услуги</a></li>
+                <li><a href="#calc">Расчитать стоимость</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#process">Процесс взаимодействия</a></li>
+                <li><a href="#team">Наша команда</a></li>
+                <li><a href="#feedback">Остались вопросы</a></li>
+              </ul>
+            </menu>
+            <!-- осталось меню, взять из урока -->
+          </div>
+        </div>
+        <div class="row">
+          <h1>Услиги по 3D моделированию <br><span>полный спектр услуг</span></h1>
+          <p class="form__headline">Оставьте заявку сейчас и получите дизайн интерьера 25кв2 бесплатно!*</p> 
+        </div>
+        <div class="row">
+          <form method="get" action="#">
+            <input type="text" placeholder="Ваше имя" class="displayOne__input">
+            <input type="text" placeholder="E-mail" class="displayOne__input">
+            <input type="text" placeholder="Номер телефона" class="displayOne__input">
+            <a href="#" class="displayOne__btn">Оставить заявку!</a> 
+          </form>
+          <div class="main__form-media">
+            <input type="text" placeholder="Ваше имя" class="displayOne__input">
+            <br>
+            <input type="text" placeholder="E-mail" class="displayOne__input">
+            <br>
+            <input type="text" placeholder="Номер телефона" class="displayOne__input">
+            <br>
+            <a href="#" class="displayOne__btn">Оставить заявку!</a>
+          </div>
+        </div>
+        <div class="row">
+          <span class="displayOne__privace">*Мы гарантируем конфидициальность передаваемых данных</span>
+        </div>
+        <div class="row">
+          <img class="mouse" src="img/mouse.png" alt="мышка">
+        </div>
+      </div>
+    </main> 
+    <div class="display2" id="services">
+      <div class="container">
+        <div class="row">
+          <h2 class="display2__headline">Наши услуги</h2>
+        </div>
+        <div class="row">
+          <span class="display2__line"></span>
+        </div>
+        <div class="row display2__ourServices">
+          <div class="display2__ourServices1 col-6">
+            <p> <span>Дизайн интерьера</span><br>
+              Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и эстетически приятное ощущение у
+              человека при нахождении в помещении</p>
+            <a href="#main">Оставить заявку</a>
+          </div>
+          <img src="img/our_services_1.jpg" alt="картинка" class="display2__ourServices1_img col-6">
+        </div>
+        <div class="row display2__ourServices">
+          <img src="img/our_services2.jpg" alt="картинка" class="display2__ourServices1_img col-6">
+          <div class="display2__ourServices1 col-6">
+            <p> <span>Дизайн экстерьера</span><br>
+              Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая
+              обеспечить удобство людей при нахождении на территории</p>
+          </div>
+        </div>
+        <div class="row display2__ourServices">
+          <div class="display2__ourServices1 col-6">
+            <p> <span>Визуализация</span><br>
+              Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая
+              обеспечить удобство людей при нахождении на территории</p>
+          </div>
+          <img src="img/our_services3.jpg" alt="картинка" class="display2__ourServices1_img col-6">
+        </div>
+        <div class="row display2__ourServices-media">
+          <div class="display2__ourServices1 col-12">
+            <p> <span>Дизайн интерьера</span><br>
+              Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и эстетически приятное ощущение
+              у
+              человека при нахождении в помещении</p>
+            <a href="#main">Оставить заявку</a>
+          </div>
+        </div>
+        <div class="row display2__ourServices-media">
+          <img src="img/our_services_1.jpg" alt="картинка" class="display2__ourServices1_img col-12">
+        </div>
+        <div class="row display2__ourServices-media">
+          <div class="display2__ourServices1 col-12">
+            <p> <span>Дизайн экстерьера</span><br>
+              Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая
+              обеспечить удобство людей при нахождении на территории</p>
+          </div>
+        </div>
+        <div class="row display2__ourServices-media">
+          <img src="img/our_services2.jpg" alt="картинка" class="display2__ourServices1_img col-12">
+        </div>
+        <div class="row display2__ourServices-media">
+          <div class="display2__ourServices1 col-12">
+            <p> <span>Визуализация</span><br>
+              Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая
+              обеспечить удобство людей при нахождении на территории</p>
+          </div>
+        </div>
+        <div class="row display2__ourServices-media">
+          <img src="img/our_services3.jpg" alt="картинка" class="display2__ourServices1_img col-12">
+        </div>
+      </div>
+    </div>
+    <div class="display3" id="calc">
+      <div class="container">
+        <div class="row">
+          <h2>Расчитать стоимость</h2> <br>
+        </div>
+        <div class="row">
+          <span class="display3__line"></span>
+        </div>
+        <div class="row">
+          <p class="display3__description">Расчитайте предварительную стоимость разработки интерьера</p>
+        </div>
+        <div class="row calcNormal">
+          <div class="col-7 col-sm-8">
+            <div class="display3__rectangle">
+               <p class="display3__recText">Площадь помещения:</p> 
+               <div class="calc">
+                <p>100м<sup>2</sup></p>
+                <p>250м<sup>2</sup></p>
+                <p>500м<sup>2</sup></p>
+                <p>1 000м<sup>2</sup></p>
+               </div>
+               <div class="calc calc__checkbox">
+                 <span class="calc__check active" data-sum="100"></span>
+                 <span class="calc__check " data-sum="250"></span>
+                 <span class="calc__check " data-sum="500"></span>
+                 <span class="calc__check " data-sum="1000"></span>
+               </div>
+            </div>
+            <div class="display3__rectangle_2">
+              <p class="display3__recText">Выберите пакет:</p>
+              <div class="display3__tabs tabActive" data-multi='1' data-calcHover="1">Light</div>
+              <div class="display3__tabs" data-multi='1.5' data-calcHover="2">Medium</div>
+              <div class="display3__tabs display3__tab3" data-multi='2' data-calcHover="3">Full</div>
+              <div class="calcHover calcHover_1 ">
+                План расстановки мебели 3D визуализация. Все рабочие <br>чертежи (план полов, план потолка, развертки по стенам,<br> план
+                электросетей)
+              </div>
+              <div class="calcHover calcHover_2">
+                План расстановки мебели 3D визуализация. Все рабочие <br>чертежи (план полов, план потолка, развертки по стенам,<br>
+                план
+                электросетей)
+              </div>
+              <div class="calcHover calcHover_3">
+                План расстановки мебели 3D визуализация. Все рабочие <br>чертежи (план полов, план потолка, развертки по стенам,<br>
+                план
+                электросетей)
+              </div>
+            </div>
+          </div>
+          <div class="col-5 col-sm-4 right">
+            <p>Площадь помещения:</p> 
+            <span class="calc__s"></span><span>м<sup>2</sup></span><br>
+            <p>Средняя стоимость м <sup>2</sup>:</p> 
+            <span class="calc__price"></span> <span>тг</span><br>
+            <p>Средняя стоимость объекта:</p> 
+            <span class="calc__total">48 500</span><span>тг</span> <br> <br>
+            <a href="#">Получить консультацию специалиста</a><br>
+            <p>или позвоните нам по телефону: <br>
+            <strong>+ 7 727 388 71 77</strong></p>
+          </div>
+        </div>
+        <div class="row calcMedia">
+          <div class="row">
+            <div class="display3__rectangle">
+              <p class="display3__recText">Площадь помещения:</p>
+              <div class="calc">
+                <p>100м<sup>2</sup></p>
+                <p>250м<sup>2</sup></p>
+                <p>500м<sup>2</sup></p>
+                <p>1 000м<sup>2</sup></p>
+              </div>
+              <div class="calc calc__checkbox">
+                <span class="calc__check active" data-sum="100"></span>
+                <span class="calc__check " data-sum="250"></span>
+                <span class="calc__check " data-sum="500"></span>
+                <span class="calc__check " data-sum="1000"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="display3__rectangle_2">
+              <p class="display3__recText">Выберите пакет:</p>
+              <div class="display3__tabs tabActive" data-multi='1' data-calcHover="1">Light</div>
+              <div class="display3__tabs" data-multi='1.5' data-calcHover="2">Medium</div>
+              <div class="display3__tabs display3__tab3" data-multi='2' data-calcHover="3">Full</div>
+              <div class="calcHover calcHover_1 ">
+                План расстановки мебели 3D визуализация. Все рабочие <br>чертежи (план полов, план потолка, развертки по стенам,<br>
+                план
+                электросетей)
+              </div>
+              <div class="calcHover calcHover_2">
+                План расстановки мебели 3D визуализация. Все рабочие <br>чертежи (план полов, план потолка, развертки по стенам,<br>
+                план
+                электросетей)
+              </div>
+              <div class="calcHover calcHover_3">
+                План расстановки мебели 3D визуализация. Все рабочие <br>чертежи (план полов, план потолка, развертки по стенам,<br>
+                план
+                электросетей)
+              </div>
+            </div>
+          </div>
+          <div class="row right">
+            <div class="col-sm-6 rightMedia">
+              <p>Площадь помещения:</p>
+              <span class="calc__s"></span><span>м<sup>2</sup></span><br>
+              <p>Средняя стоимость м <sup>2</sup>:</p>
+              <span class="calc__price"></span> <span>тг</span><br>
+              <p>Средняя стоимость объекта:</p>
+              <span class="calc__total">48 500</span><span>тг</span> <br> <br>
+              <a href="#">Получить консультацию специалиста</a><br>
+              <p>или позвоните нам по телефону: <br>
+                <strong>+ 7 727 388 71 77</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="display4" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <h2 class="display4__headline">Портфолио</h2>
+        </div>
+        <div class="row">
+          <span class="display4__line"></span>
+        </div>
+        <div class="row display4__normal">
+          <div class="display4__tabs">
+            <span class="display4__tab-1 display4__tab-active display4__tab">все проекты</span> 
+            <span class="display4__tabs-line"></span>
+            <span class="display4__tab-2 display4__tab">экстерьеры</span>
+            <span class="display4__tabs-line"></span>
+            <span class="display4__tab-3 display4__tab">жилые интерьеры</span>
+            <span class="display4__tabs-line"></span>
+            <span class="display4__tab-4 display4__tab">общественные интерьеры</span>
+          </div>
+        </div>
+        <div class="row display4__media">
+          <div class="display4__tabs">
+            <span class="display4__tab-1 display4__tab-active display4__tab">все</span>
+            <span class="display4__tabs-line"></span>
+            <span class="display4__tab-2 display4__tab">экстерьеры</span>
+            <span class="display4__tabs-line"></span>
+            <span class="display4__tab-3 display4__tab">жилые</span>
+            <span class="display4__tabs-line"></span>
+            <span class="display4__tab-4 display4__tab">общественные</span>
+          </div>
+        </div>
+        <div class="row display4Normal">
+          <div class="col-4">
+            <img src="img/display4-1.jpg" alt="">
+          </div>
+          <div class="col-4">
+            <img src="img/display4-2.jpg" alt="">
+          </div>
+          <div class="col-4">
+            <img src="img/display4-3.jpg" alt="">
+          </div>
+        </div>
+        <div class="row display4Normal">
+          <div class="col-4">
+            <img src="img/display4-4.jpg" alt="">
+          </div>
+          <div class="col-4">
+            <img src="img/display4-5.jpg" alt="">
+          </div>
+          <div class="col-4">
+            <img src="img/display4-6.jpg" alt="">
+          </div>
+        </div>
+        <div class="row display4Media">
+          <div class="col-6">
+            <img src="img/display4-1.jpg" alt="">
+          </div>
+          <div class="col-6">
+            <img src="img/display4-2.jpg" alt="">
+          </div>
+        </div>
+        <div class="row display4Media">
+          <div class="col-6">
+            <img src="img/display4-3.jpg" alt="">
+          </div>
+          <div class="col-6">
+            <img src="img/display4-4.jpg" alt="">
+          </div>
+        </div>
+        <div class="row display4Media">
+          <div class="col-6">
+            <img src="img/display4-5.jpg" alt="">
+          </div>
+          <div class="col-6">
+            <img src="img/display4-6.jpg" alt="">
+          </div>
+        </div>
+        <div class="row display4Mobile">
+          <img src="img/display4-1.jpg" alt="">
+        </div>
+        <div class="row display4Mobile">
+          <img src="img/display4-2.jpg" alt="">
+        </div>
+        <div class="row display4Mobile">
+          <img src="img/display4-3.jpg" alt="">
+        </div>
+        <div class="row display4Mobile">
+          <img src="img/display4-4.jpg" alt="">
+        </div>
+        <div class="row display4Mobile">
+          <img src="img/display4-5.jpg" alt="">
+        </div>
+        <div class="row display4Mobile">
+          <img src="img/display4-6.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="display5">
+      <div class="container">
+        <div class="row">
+          <h2 class="display5__headline">Почему мы лучшие?</h2>
+        </div>
+        <div class="row">
+          <span class="display5__line"></span>
+        </div>
+        
+        <div class="row display5__icon">
+          <div class="col-3">
+            <img class="" src="img/display5-1.png" alt="">
+            <br>
+            <span class="display5__icon-line"></span>
+            <br>
+            <p>Профессиональные дизайнеры и визу-<br>ализаторы с зарубежной практикой<br>работы</p>
+          </div>
+          <div class="col-3">
+            <img class="" src="img/display5-2.png" alt="">
+            <br>
+            <span class="display5__icon-line"></span>
+            <br>
+            <p>Интеративный подход, работаем до<br>полного согласования с Вами</p>
+          </div>
+          <div class="col-3">
+            <img class="" src="img/display5-3.png" alt="">
+            <br>
+            <span class="display5__icon-line"></span>
+            <br>
+            <p>Решаем вопрос закупки, берем автор-<br>ский надзор на себя (пакет Full)</p>
+          </div>
+          <div class="col-3">
+            <img class="" src="img/display5-4.png" alt="">
+            <br>
+            <span class="display5__icon-line"></span>
+            <br>
+            <p>Над проектом работает группа специа-<br>листов под началом project менеджера<br>в ERP системе</p>
+          </div>
+        </div>
+        <div class="row display5__icon">
+          <div class="offset-3 col-3">
+            <img class="" src="img/display5-5.png" alt="">
+            <br>
+            <span class="display5__icon-line"></span>
+            <br>
+            <p>Выполнение раньше установленных<br>сроков</p>
+          </div>
+          <div class="col-3">
+            <img class="" src="img/display5-6.png" alt="">
+            <br>
+            <span class="display5__icon-line"></span>
+            <br>
+            <p>Дарим альбом проекта, вместе с 25%<br>скидкой на следующее обращение</p>
+          </div>
+        </div>
+
+
+        <div class="row display5__iconMedia">
+          <div class="col-6">
+            <img class="" src="img/display5-1.png" alt="">
+            <br>
+            <span class="display5__icon-line"></span>
+            <br>
+            <p>Профессиональные дизайнеры и визу-<br>ализаторы с зарубежной практикой<br>работы</p>
+          </div>
+          <div class="col-6">
+            <img class="" src="img/display5-2.png" alt="">
+            <br>
+            <span class="display5__icon-line"></span>
+            <br>
+            <p>Интеративный подход, работаем до<br>полного согласования с Вами</p>
+          </div>
+        </div>
+        <div class="row display5__iconMedia">
+          <div class="col-6">
+            <img class="" src="img/display5-3.png" alt="">
+            <br>
+            <span class="display5__icon-line"></span>
+            <br>
+            <p>Решаем вопрос закупки, берем автор-<br>ский надзор на себя (пакет Full)</p>
+          </div>
+          <div class="col-6">
+            <img class="" src="img/display5-4.png" alt="">
+            <br>
+            <span class="display5__icon-line"></span>
+            <br>
+            <p>Над проектом работает группа специа-<br>листов под началом project менеджера<br>в ERP системе</p>
+          </div>
+        </div> 
+        <div class="row display5__iconMedia">
+          <div class="col-6">
+            <img class="" src="img/display5-5.png" alt="">
+            <br>
+            <span class="display5__icon-line"></span>
+            <br>
+            <p>Выполнение раньше установленных<br>сроков</p>
+          </div>
+          <div class="col-6">
+            <img class="" src="img/display5-6.png" alt="">
+            <br>
+            <span class="display5__icon-line"></span>
+            <br>
+            <p>Дарим альбом проекта, вместе с 25%<br>скидкой на следующее обращение</p>
+          </div>
+        </div>
+        
+        <div class="row display5__iconMobile">
+          <img class="" src="img/display5-1.png" alt="">
+          <br>
+          <span class="display5__icon-line"></span>
+          <br>
+          <p>Профессиональные дизайнеры и визу-<br>ализаторы с зарубежной практикой<br>работы</p>
+        </div>
+        <div class="row display5__iconMobile">
+          <img class="" src="img/display5-2.png" alt="">
+          <br>
+          <span class="display5__icon-line"></span>
+          <br>
+          <p>Интеративный подход, работаем до<br>полного согласования с Вами</p>
+        </div>
+        <div class="row display5__iconMobile">
+          <img class="" src="img/display5-3.png" alt="">
+          <br>
+          <span class="display5__icon-line"></span>
+          <br>
+          <p>Решаем вопрос закупки, берем автор-<br>ский надзор на себя (пакет Full)</p>
+        </div>
+        <div class="row display5__iconMobile">
+          <img class="" src="img/display5-4.png" alt="">
+          <br>
+          <span class="display5__icon-line"></span>
+          <br>
+          <p>Над проектом работает группа специа-<br>листов под началом project менеджера<br>в ERP системе</p>
+        </div>
+        <div class="row display5__iconMobile">
+          <img class="" src="img/display5-5.png" alt="">
+          <br>
+          <span class="display5__icon-line"></span>
+          <br>
+          <p>Выполнение раньше установленных<br>сроков</p>
+        </div>
+        <div class="row display5__iconMobile">
+          <img class="" src="img/display5-6.png" alt="">
+          <br>
+          <span class="display5__icon-line"></span>
+          <br>
+          <p>Дарим альбом проекта, вместе с 25%<br>скидкой на следующее обращение</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="display6" id="process">
+      <div class="container">
+        <div class="row">
+          <h2>Процесс взаимодействия</h2>
+        </div>
+        <div class="row">
+          <span class="display6__line"></span>
+        </div>
+        <div class="row display6__item">
+          <div class="col-6">
+            <img src="img/display6-1.jpg">
+          </div>
+          <div class="col-6">
+            <p>Заполнение брифа</p>
+          </div>
+        </div>
+        <div class="row display6__item">
+          <div class="col-6">
+            <p>Исследование</p>
+          </div>
+          <div class="col-6">
+            <img src="img/display6-2.jpg">
+          </div>
+        </div>
+        <div class="row display6__item">
+          <div class="col-6">
+            <img src="img/display6-3.jpg">
+          </div>
+          <div class="col-6">
+            <p>Идея</p>
+          </div>
+        </div>
+        <div class="row display6__item">
+          <div class="col-6">
+            <p>Завершение</p>
+          </div>
+          <div class="col-6">
+            <img src="img/display6-4.jpg">
+          </div>
+        </div>
+        <div class="row display6__item-media">
+          <img src="img/display6-1.jpg">
+        </div>
+        <div class="row display6__item-media">
+          <p>Заполнение брифа</p>
+        </div>
+        <div class="row display6__item-media">
+          <img src="img/display6-2.jpg">
+        </div>
+        <div class="row display6__item-media">
+          <p>Исследование</p>
+        </div>
+        <div class="row display6__item-media">
+          <img src="img/display6-3.jpg">
+        </div>
+        <div class="row display6__item-media">
+          <div class="col-12">
+          <p>Идея</p>
+          </div>
+        </div>
+        <div class="row display6__item-media">
+          <img src="img/display6-4.jpg">
+        </div>
+        <div class="row display6__item-media">
+          <p>Завершение</p>
+        </div>
+      </div>
+    </div>
+    <div class="display7">
+      <div class="container">
+        <div class="row">
+          <h2>Нам доверяют более 50 компаний</h2>
+        </div>
+        <div class="row">
+          <span class="display7__line"></span>
+        </div>
+      </div>
+    </div>
+    <div class="display7__slider">
+      <div class="slider">
+        <div class="viewport">
+          <div class="wrapper">
+            <img src="img/slider-1.png" alt="">
+            <img src="img/slider-2.png" alt="">
+            <img src="img/slider-3.png" alt="">
+            <img src="img/slider-4.png" alt="">
+            <img src="img/slider-5.png" alt="" class="slideMargin">
+            <img src="img/slider-6.png" alt="">
+            <img src="img/slider-7.png" alt="">
+            <img src="img/slider-1.png" alt="">
+            <img src="img/slider-2.png" alt="">
+            <img src="img/slider-3.png" alt="">
+            <img src="img/slider-4.png" alt="">
+            <img src="img/slider-5.png" alt="" class="slideMargin">
+            <img src="img/slider-6.png" alt="">
+            <img src="img/slider-7.png" alt="">
+            <img src="img/slider-1.png" alt="">
+            <img src="img/slider-2.png" alt="">
+            <img src="img/slider-3.png" alt="">
+            <img src="img/slider-4.png" alt="">
+            <img src="img/slider-5.png" alt="" class="slideMargin">
+            <img src="img/slider-6.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div id="slider">
+        <div id="custom-handle" class="ui-slider-handle"></div>
+      </div>
+    </div>
+    <div class="display8" id="team">
+      <div class="container">
+        <div class="row">
+          <h2>Наша команда</h2>
+        </div>
+        <div class="row">
+          <span class="display8__line"></span>
+        </div>
+        <div class="row display8__normal">
+          <div class="col-4 display8__item">
+            <img src="img/display8-1.jpg" alt="">
+            <br>
+            <span class="display8__name">Ирина Притыкина</span>
+            <br>
+            <p class="display8__position">Директор компании</p>
+          </div>
+          <div class="col-4 display8__item">
+            <img src="img/display8-2.jpg" alt="">
+            <br>
+            <span class="display8__name">Игорь Карий</span>
+            <br>
+            <p class="display8__position">Финансовый директор</p>
+          </div>
+          <div class="col-4 display8__item">
+            <img src="img/display8-3.jpg" alt="">
+            <br>
+            <span class="display8__name">Илья Кондрашин</span>
+            <br>
+            <p class="display8__position">Инженер модельер</p>
+          </div>
+        </div>
+        <div class="row display8__normal">
+          <div class="col-4 display8__item">
+            <img src="img/display8-4.jpg" alt="">
+            <br>
+            <span class="display8__name">Маргарита Гордеева</span>
+            <br>
+            <p class="display8__position">3D дизайнер</p>
+          </div>
+          <div class="col-4 display8__item">
+            <img src="img/display8-5.jpg" alt="">
+            <br>
+            <span class="display8__name">Светлана Коток</span>
+            <br>
+            <p class="display8__position">Дизайнер интерьеров</p>
+          </div>
+          <div class="col-4 display8__item">
+            <img src="img/display8-6.jpg" alt="">
+            <br>
+            <span class="display8__name">Максим Ковальский</span>
+            <br>
+            <p class="display8__position">Дизайнер ландшафтов</p>
+          </div>
+        </div>
+        <div class="row display8__media">
+          <img src="img/display8-1.jpg" alt="">
+          <br>
+          <span class="display8__name">Ирина Притыкина</span>
+          <br>
+          <p class="display8__position">Директор компании</p>
+        </div>
+        <div class="row display8__media">
+          <img src="img/display8-2.jpg" alt="">
+          <br>
+          <span class="display8__name">Игорь Карий</span>
+          <br>
+          <p class="display8__position">Финансовый директор</p>
+        </div>
+        <div class="row display8__media">
+          <img src="img/display8-3.jpg" alt="">
+          <br>
+          <span class="display8__name">Илья Кондрашин</span>
+          <br>
+          <p class="display8__position">Инженер модельер</p>
+        </div>
+        <div class="row display8__media">
+          <img src="img/display8-4.jpg" alt="">
+          <br>
+          <span class="display8__name">Маргарита Гордеева</span>
+          <br>
+          <p class="display8__position">3D дизайнер</p>
+        </div>
+        <div class="row display8__media">
+          <img src="img/display8-5.jpg" alt="">
+          <br>
+          <span class="display8__name">Светлана Коток</span>
+          <br>
+          <p class="display8__position">Дизайнер интерьеров</p>
+        </div>
+        <div class="row display8__media">
+          <img src="img/display8-6.jpg" alt="">
+          <br>
+          <span class="display8__name">Максим Ковальский</span>
+          <br>
+          <p class="display8__position">Дизайнер ландшафтов</p>
+        </div>
+        <div class="row">
+          <div class="queto">
+            <img src="img/quotesLeft.png" alt="" class="quetosLeft">
+            <img src="img/quotesRight.png" alt="" class="quetosRight">
+            <h2>Ты - то, что ты делаешь!</h2><br>
+            <p>То, что мы делаем, определяет то, кем мы являемся. Люди чувствуют старание и чувствуют неаккуратность. Это<br>связано с
+            уважением друг к другу, так что небрежность - это неуважение к самому себе.</p><br>
+            <span class="queto__name">Ислам Куаныш</span><br>
+            <span class="queto__director">Директор</span><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="display9">
+      <div class="container">
+        <div class="row">
+          <h2>Блог</h2>
+        </div>
+        <div class="row">
+          <span class="display8__line"></span>
+        </div>
+        <div class="row display9__item">
+          <div class="col-6 display9__photo display9__photo-1">
+            <img src="img/display9-1.jpg" alt="">
+            <a href="#">Минимализм – это самый простой, практичный и «спорный»<br>стиль в дизайне интерьеров</a>
+          </div>
+          <div class="col-6 display9__photo">
+            <img src="img/display9-2.jpg" alt="">
+            <a href="#">Прованс - это спокойный южный регион Франции, с<br>великолепнейшей природой</a>
+          </div>
+        </div>
+        <div class="row display9__item-media">
+          <img src="img/display9-1.jpg" alt=""><br>
+          <a href="#">Минимализм – это самый простой, практичный и «спорный»<br>стиль в дизайне интерьеров</a>
+        </div>
+        <div class="row display9__item-media">
+          <img src="img/display9-2.jpg" alt=""><br>
+          <a href="#">Прованс - это спокойный южный регион Франции, с<br>великолепнейшей природой</a>
+        </div>
+      </div>
+    </div>    
+    <div class="display10" id="feedback">
+      <div class="container">
+        <div class="row">
+          <h2>Остались вопросы?</h2>
+        </div>
+        <div class="row">
+          <span class="display10__line"></span>
+        </div>
+        <div class="row">
+          <p class="display10__desc">Задайте их в форме ниже и наши специалисты свяжуться с Вами!</p>
+        </div>
+        <div class="row display10__form">
+          <div class="col-8">
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваш e-mail">
+            <input type="text" placeholder="Ваш номер телефона" class="input">
+            <textarea placeholder="Ваше сообщение"></textarea>
+            <a href="#" class="button">Оставить заявку!</a>
+          </div>
+          <div class="col-4">
+            <div class="row display10__formRight">
+              <img src="img/display10-1.png" alt="">
+              <span>+ 7 896 876 66 77</span>
+            </div>
+            <div class="row display10__formRight">
+              <img src="img/display10-2.png" alt="">
+              <span>+ 7 896 876 66 77</span>
+            </div>
+            <div class="row display10__formRight">
+              <img src="img/display10-3.png" alt="">
+              <span>sales@23degree.kz</span>
+            </div>
+            <div class="row display10__formRight">
+              <img src="img/display10-5.png" alt="">
+              <span>skype: 23degree</span>
+            </div>
+            <div class="row display10__formRight">
+              <img src="img/display10-6.png" alt="">
+              <span>telegram: 23degree</span>
+            </div>
+            <div class="row display10__formRight">
+              <p>График работы: с 9-00 до 18-00. Пн.-Пт.</p>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="row display10__form-media">
+          <div class="row">
+            <input type="text" placeholder="Ваше имя">
+          </div>
+          <div class="row">
+            <input type="text" placeholder="Ваш e-mail">
+          </div>
+          <div class="row">
+            <input type="text" placeholder="Ваш номер телефона" class="input">
+          </div>
+          <div class="row">
+            <textarea placeholder="Ваше сообщение"></textarea>
+          </div>
+          <div class="row">
+            <a href="#" class="button">Оставить заявку!</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <footer>
+      <h2>Разработка сайта - Рифат Субаев</h2>
+    </footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
+  <script src="script/main.js"></script>
+  </body>
+</html>
